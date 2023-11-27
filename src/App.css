@@ -1,7 +1,7 @@
 body {
-  background-color: #ffffff;
+  background-color: #d3cfcf;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #root {
@@ -10,7 +10,7 @@ body {
   padding: 2rem;
   text-align: center;
   position: relative;
-  z-index: 1;
+ 
 }
 
 .wave {
@@ -38,10 +38,6 @@ body {
   left: -100px;
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
-
-
-
-
 
 .bottom-right {
   bottom: -200px;
