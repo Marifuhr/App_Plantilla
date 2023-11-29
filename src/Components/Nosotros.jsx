@@ -5,8 +5,8 @@ import jbc from '../assets/jbc_pano.jpeg';
 export default function Nosotros() {
   return (
     <div style={{ display: 'flex', alignItems: 'center' }}>
-      <img src={jbc} alt="not found" style={{ width: '50%', marginLeft: '-10px', marginTop: '200px' }} />
-      <div style={{ marginLeft: '30px', marginTop: '200px' }}>
+      <img src={jbc} alt="not found" style={{ width: '50%', marginTop: '30px' }} />
+      <div style={{ marginLeft: '70px', marginTop: '200px', marginRight:'-100px' }}>
         <h1>Nuestra Empresa</h1>
         <p>Desde el inicio de nuestro corralón de materiales y ferretería JBC el 17 de septiembre de 2011, nos hemos destacado por ofrecer productos de calidad y un servicio excepcional a nuestros clientes. 
 Desde aquel día, hemos trabajado arduamente para construir una empresa sólida y confiable. Nuestro compromiso con la excelencia nos ha llevado a establecer relaciones duraderas con proveedores confiables y a mantener un amplio inventario de materiales y productos de ferretería, garantizando así la disponibilidad de todo lo necesario para llevar a cabo proyectos de construcción y mantenimiento.

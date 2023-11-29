@@ -5,9 +5,9 @@ body {
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 1090px;
+  margin-top: 40px;
+  margin-left: 15px;
   text-align: center;
   position: relative;
  

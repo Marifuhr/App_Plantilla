@@ -1,11 +1,13 @@
 import React from 'react';
-import camping from '../assets/camping_jbc.jpeg';
+
+import Carousel from './Carousel';
+
 
 export default function Inicio() {
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      
-    
-    </div>
+  <div style={{marginTop: '250px', maxWidth: '100%'}}>
+      <Carousel /> 
+
+  </div>
   );
 }

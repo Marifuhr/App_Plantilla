@@ -1,28 +1,4 @@
-// import React from 'react'
-// import logo from '../assets/logo_corralon.jpg'
-// import Button from '@mui/material/Button'
-// import { Link } from 'react-router-dom'
 
-// export default function NavBar() {
-//   return (
-//     <div>
-//       <img src={logo} alt="Not found" style={{ marginRight: '80rem', marginTop: '-60px' }} />
-//     <Button style={{background: 'beige', marginRight:'10px', marginTop:'-250px'}}>
-//       Nosotros
-//     </Button>
-//     <Button style={{background: 'beige', marginRight:'10px', marginTop:'-250px'}}>
-//       Contacto
-//     </Button>
-//     <Link to="/servicios" style={{ textDecoration: 'none' }}>
-//   <Button style={{ background: 'beige', marginRight: '10px', marginTop: '-250px' }}>
-//     Servicios
-//   </Button>
-// </Link>
-//     </div>
-  
-
-//   )
-// }
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -40,6 +16,8 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { useState } from 'react';
 import logo from '../assets/logo_corralon.jpg'
 import { Link } from 'react-router-dom';
+import AppsMenu from './AppsMenu';
+
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -89,7 +67,6 @@ function NavBar() {
             >
               <MenuIcon />
             </IconButton>
-
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -147,11 +124,11 @@ function NavBar() {
     if (page === 'Inicio') {
       return (
         <Button
-          key={page}
-          component={Link}
-          to="/inicio"
-          onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }}
+        key={page}
+        component={Link}
+        to="/inicio"
+        onClick={handleCloseNavMenu}
+        sx={{ my: 2, color: 'white', display: 'block' }}
         >
           {page}
         </Button>
@@ -159,11 +136,11 @@ function NavBar() {
     } else if (page === 'Servicios') {
       return (
         <Button
-          key={page}
-          component={Link}
-          to="/servicios"
-          onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }}
+        key={page}
+        component={Link}
+        to="/servicios"
+        onClick={handleCloseNavMenu}
+        sx={{ my: 2, color: 'white', display: 'block' }}
         >
           {page}
         </Button>
@@ -171,11 +148,11 @@ function NavBar() {
     } else if (page === 'Nosotros') {
       return (
         <Button
-          key={page}
-          component={Link}
-          to="/nosotros"
-          onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }}
+        key={page}
+        component={Link}
+        to="/nosotros"
+        onClick={handleCloseNavMenu}
+        sx={{ my: 2, color: 'white', display: 'block' }}
         >
           {page}
         </Button>
@@ -183,11 +160,11 @@ function NavBar() {
     } else if (page === 'Contacto') {
       return (
         <Button
-          key={page}
-          component={Link}
-          to="/contacto"
-          onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }}
+        key={page}
+        component={Link}
+        to="/contacto"
+        onClick={handleCloseNavMenu}
+        sx={{ my: 2, color: 'white', display: 'block' }}
         >
           {page}
         </Button>
@@ -195,9 +172,9 @@ function NavBar() {
     } else {
       return (
         <Button
-          key={page}
-          onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }}
+        key={page}
+        onClick={handleCloseNavMenu}
+        sx={{ my: 2, color: 'white', display: 'block' }}
         >
           {page}
         </Button>
@@ -205,6 +182,7 @@ function NavBar() {
     }
   })}
 </Box>
+  <AppsMenu />
         </Toolbar>
       </Container>
     </AppBar>
