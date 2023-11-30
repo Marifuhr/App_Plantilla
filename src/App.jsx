@@ -7,6 +7,11 @@ import Nosotros from './Components/Nosotros';
 import Contacto from './Components/Contacto';
 import whatsappLogo from './assets/logo_what.png';
 import { useState, useEffect } from 'react';
+import Corralon from './Components/Corralon';
+import Ferreteria from './Components/Ferreteria';
+import Ofertas from './Components/Ofertas';
+import Acopio from './Components/Acopio';
+import Pagos from './Components/Pagos';
 
 function App() {
   const [showButton, setShowButton] = useState();
@@ -27,6 +32,7 @@ function App() {
 
   return (
     <>
+ 
       <Router>
         <NavBar />
         <Routes>
@@ -34,6 +40,11 @@ function App() {
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/corralon" element={<Corralon />} />
+          <Route path="/ferreteria" element={<Ferreteria />} />
+          <Route path="/ofertas" element={<Ofertas />} />
+          <Route path="/acopio" element={<Acopio />} />
+          <Route path="/pagos" element={<Pagos />} />
         </Routes>
       </Router>
       {showButton && (
@@ -44,5 +55,8 @@ function App() {
     </>
   );
 }
+
+
+
 
 export default App;

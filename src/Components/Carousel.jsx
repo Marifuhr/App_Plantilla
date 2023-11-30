@@ -14,24 +14,23 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+    label: 'Somos tu aliado en tus proyectos',
+    imgPath: 'https://www.toulouselautrec.edu.pe/sites/default/files/edificios-oficinas.jpg',
   },
   {
-    label: 'Bird',
+    label: 'Contamos con una amplia gama de materiales',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://www.materialeschaparro.com/uploads/7tZTLWaZ/company_name_branding-banner-materiales-de-construccion.jpg',
   },
   {
-    label: 'Bali, Indonesia',
+    label: 'Rubro Ferretería',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+      'https://www.dipel.com.ar/cabecera/inicio_f2.jpg',
   },
   {
-    label: 'Goč, Serbia',
+    label: 'Servicio de Alquiler de herramientas',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://www.revista.ferrepat.com/wp-content/uploads/2016/10/800x518xmartelo-demolidor-bosh-gsh-27-2.jpeg.pagespeed.ic_.dyJvYSW93P-e1447918275963.jpg',
   },
 ];
 
@@ -53,7 +52,7 @@ function Carousel() {
   };
 
   return (
-    <Box sx={{  maxWidth: '100%', maxHeight: 800, marginTop: '280px', marginLeft: '300px' }}>
+    <Box sx={{  maxWidth: '100%', maxHeight: 1000, marginTop: '180px', marginLeft: '300px' }}>
       <Paper
         square
         elevation={0}

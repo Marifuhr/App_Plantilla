@@ -4,6 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Apps from '@mui/icons-material/Apps';
+import { Link } from 'react-router-dom';
 
 function AppsMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -34,20 +35,20 @@ function AppsMenu() {
         open={Boolean(anchorEl)}
         onClose={handleCloseMenu}
       >
-        <MenuItem>
-          Search
+        <MenuItem component={Link} to="/corralon">
+          Corralón
         </MenuItem>
-        <MenuItem>
-          Maps
+        <MenuItem component={Link} to="/ferreteria">
+         Ferretería
         </MenuItem>
-        <MenuItem>
-          Mail
+        <MenuItem component={Link} to="/ofertas">
+          Ofertas
         </MenuItem>
-        <MenuItem>
-          Drive
+        <MenuItem component={Link} to="/pagos">
+          Medios de Pago
         </MenuItem>
-        <MenuItem>
-          Calendar
+        <MenuItem component={Link} to="/acopios">
+         Acopios
         </MenuItem>
       </Menu>
     </>

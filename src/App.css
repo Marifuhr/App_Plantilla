@@ -69,3 +69,13 @@ body {
   width: 24px;
   height: 24px;
 }
+.custom-shape-divider-top-1701286855 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+

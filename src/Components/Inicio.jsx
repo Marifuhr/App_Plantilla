@@ -5,9 +5,14 @@ import Carousel from './Carousel';
 
 export default function Inicio() {
   return (
+    <>
+
   <div style={{marginTop: '250px', maxWidth: '100%'}}>
       <Carousel /> 
 
   </div>
+  <h1>Hola</h1>
+ 
+  </>
   );
 }
